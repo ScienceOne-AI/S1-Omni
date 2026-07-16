@@ -1,0 +1,7 @@
+Download from this link:
+
+https://huggingface.co/boltz-community/boltz-1/tree/main
+
+This folder (simplefold_inference_pt) contains:
+- boltz1_conf.ckpt
+- ccd.pkl

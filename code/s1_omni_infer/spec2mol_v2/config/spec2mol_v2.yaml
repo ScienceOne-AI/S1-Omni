@@ -1,0 +1,36 @@
+llm_dmt_root: spctra_merge/spctra_module/llm_dmt/runtime
+
+source:
+  config: spctra_merge/spctra_module/llm_dmt/mast_qm9s_motif.py
+  dmt_checkpoint: spctra_merge/spctra_module/llm_dmt/checkpoint_40.pth
+  atomcount_checkpoint: spctra_merge/spctra_module/atomcount/best.pth
+  motif_checkpoint: spctra_merge/spctra_module/motif_compat/best.pth
+
+ckpt:
+  dir: spctra_merge/spctra_module/spec2mol_converted
+  dmt: mast_dmt_checkpoint_40_ema.safetensors
+  atomcount: atomcount_cls_256.safetensors
+  motif: motif_pred_256.safetensors
+  metadata: metadata.json
+
+model:
+  device: cuda:0
+  use_ema: true
+  spectra_version: allspectra
+  sampling_steps: 1000
+  sampling_temperature: 1.0
+  seed: 42
+
+jdx:
+  normalized_input: true
+  lengths:
+    uv: 701
+    ir: 3501
+    raman: 3501
+
+merge:
+  component_root: spctra_merge/spctra_module
+  merged_model_dir: spctra_merge/merged
+  route_image_order: [ir, raman, uv]
+  motif_fusion: onehot_intersection
+  specformer_motif_head_used: false

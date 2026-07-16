@@ -1,0 +1,47 @@
+# S1-Omni runtime dependencies
+# Currently covers the spec2mol_v2 task. Append dependencies for the other
+# unified tasks only after they have been verified in test_env.
+
+--extra-index-url https://mirrors.nju.edu.cn/pytorch/whl/cu121
+--find-links https://data.pyg.org/whl/torch-2.4.0+cu121.html
+
+# CUDA 12.1 / PyTorch 2.4 ABI
+torch==2.4.1+cu121
+torchvision==0.19.1+cu121
+
+# Spec2Mol runtime
+accelerate==1.14.0
+Cython==0.29.37
+huggingface-hub==1.21.0
+matplotlib==3.10.8
+ml-collections==0.1.1
+networkx==3.4.2
+numpy==1.26.4
+pillow==12.1.1
+PyYAML==5.4.1
+rdkit==2024.9.6
+safetensors==0.8.0
+scipy==1.15.3
+tokenizers==0.22.2
+torch-geometric==2.4.0
+tqdm==4.67.3
+transformers==5.6.2
+
+# PyG binary extensions for PyTorch 2.4 / CUDA 12.1
+pyg_lib==0.4.0+pt24cu121
+torch_cluster==1.6.3+pt24cu121
+torch_scatter==2.1.2+pt24cu121
+torch_sparse==0.6.18+pt24cu121
+torch_spline_conv==1.2.2+pt24cu121
+
+fastapi
+einops
+dm-tree
+timm
+mashumaro
+ihm
+modelcif
+Bio
+uvicorn
+gradio==6.19.0
+diffusers==0.36.0
