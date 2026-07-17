@@ -18,7 +18,7 @@ ml-collections==0.1.1
 networkx==3.4.2
 numpy==1.26.4
 pillow==12.1.1
-PyYAML==5.4.1
+PyYAML>=6.0.1,<7
 rdkit==2024.9.6
 safetensors==0.8.0
 scipy==1.15.3
