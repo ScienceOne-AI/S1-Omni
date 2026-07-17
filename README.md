@@ -135,7 +135,7 @@ Download the reference files required for structure prediction:
 cd simplefold_inference_pt
 ```
 
-Install the inference environment:
+Install the inference environment (Python 3.10 is recommended):
 
 ```bash
 cd S1-Omni/code
