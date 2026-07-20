@@ -444,6 +444,7 @@ If S1-Omni is useful for your research, please cite our technical report. The fo
 @misc{s1omni2026,
   title  = {S1-Omni: A Unified Multimodal Reasoning Model for Scientific Understanding, Prediction, and Generation},
   author = {ScienceOne AI and Wenge AI},
-  year   = {2026}
+  year   = {2026},
+  url    = {https://arxiv.org/abs/2607.15686}
 }
 ```
