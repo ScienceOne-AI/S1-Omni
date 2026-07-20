@@ -4,6 +4,7 @@
 
 **A Unified Scientific Multimodal Reasoning Model**
 
+[![arXiv](https://img.shields.io/badge/arXiv-2607.15686-b31b1b?logo=arxiv)](https://arxiv.org/abs/2607.15686)
 [![Blog](https://img.shields.io/badge/Blog-S1--Omni-blue)](https://scienceone-ai.github.io/S1-Omni)
 [![GitHub](https://img.shields.io/badge/GitHub-S1--Omni-181717?logo=github)](https://github.com/ScienceOne-AI/S1-Omni)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-S1--Omni-yellow)](https://huggingface.co/ScienceOne-AI/S1-Omni)
